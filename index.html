@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociedad Agrícola Tresagua S.A.S.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>SOCIEDAD AGRÍCOLA TRESAGUA S.A.S.</h1>
+        <p class="slogan">Comprometidos con el desarrollo agrícola sostenible</p>
+    </header>
+    <nav class="menu-sticky" id="menu-sticky">
+        <div class="menu-container">
+            <div class="menu-logo">
+                <span>Tresagua</span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#sobre-nosotros" class="menu-link">Nosotros</a></li>
+                <li><a href="#caracterizacion" class="menu-link">Caracterización</a></li>
+                <li><a href="#ubicacion" class="menu-link">Ubicación</a></li>
+                <li><a href="#instalaciones" class="menu-link">Instalaciones</a></li>
+                <li><a href="#productividad" class="menu-link">Productividad</a></li>
+                <li><a href="#galeria" class="menu-link">Galería</a></li>
+                <li><a href="#contacto" class="menu-link">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <section class="sobre-nosotros" id="sobre-nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>AGRICOLA TRESAGUA S.A.S "ZOMAC" es una sociedad comercial dedicada al desarrollo de actividades
+                agrícolas, forestales y pecuarias. Constituida el 27 de febrero de 2021, su objeto social principal es
+                el desarrollo de actividades agrícolas, forestales y pecuarias, incluyendo:</p>
+            <ul>
+                <li>Cultivo y comercialización de granos, semillas oleaginosas, hortalizas, frutales, invernaderos,
+                    víveres y cultivos industriales.</li>
+                <li>Explotación avícola, de bovinos, porcinos, ovinos, caprinos y otros animales.</li>
+                <li>Plantación, renovación y tala de árboles madereros para comercialización.</li>
+                <li>Comercialización de agroinsumos y servicios administrativos para la explotación agrícola, forestal y
+                    pecuaria.</li>
+            </ul>
+            <p>Actualmente, la sociedad está compuesta por cuatro socios con una participación del 25% cada uno.</p>
+        </section>
+        <section class="caracterizacion" id="caracterizacion">
+            <h2>Caracterización</h2>
+            <ul>
+                <li>Área de la finca: 47,14 hectáreas</li>
+                <li>Vertientes de agua: 17 afloramientos de agua cruzan o nacen en la finca</li>
+                <li>Altitud del terreno: Entre 1880 y 2220 metros</li>
+            </ul>
+        </section>
+        <section class="ubicacion" id="ubicacion">
+            <h2>Polígono y curvas de nivel</h2>
+            <ul>
+                <li>Ubicación: Kilómetro 6 + 970 arriba de la terminal Vereda La Cartagena, Municipio: Urrao, Antioquia,
+                    Colombia</li>
+            </ul>
+        </section>
+        <section class="instalaciones" id="instalaciones">
+            <h2>Acceso, instalaciones y cultivo</h2>
+            <ul>
+                <li>Vías internas: 1,1 km de vía principal interna y 2,4 km de caminos secundarios.</li>
+                <li>Bodega de insumos químicos y abonos.</li>
+                <li>Bodega post cosecha con muelle de carga.</li>
+                <li>3 puntos de mezcla de químicos con pozo de desactivación.</li>
+                <li>7 puntos de desinfección de calzado.</li>
+                <li>Área sembrada con aguacate HASS: 16 hectáreas productivas, posibilidad de 17 ha adicionales,
+                    capacidad para 12,000 árboles.</li>
+            </ul>
+        </section>
+        <section class="productividad" id="productividad">
+            <h2>Cifras relevantes de productividad</h2>
+            <ul>
+                <li>Número de árboles en producción: 4.700</li>
+                <li>Lotes caracterizados: 5 lotes sembrados con aguacate</li>
+                <li>Años de sembrado: Lotes 1, 2, 3 con 5 años; lotes 4 y 5 con 3,5 años</li>
+                <li>Número de árboles por hectárea: 320 (6m x 5m)</li>
+                <li>Productividad por árbol: 20-25 kg con incrementos anuales</li>
+                <li>Calibre promedio: 72% en calibres 18-22 (Europa), 40, 48 y 60 (EEUU)</li>
+                <li>Porcentaje de exportación: 90% a 92%</li>
+                <li>Precio de venta: $5.200/kg exportación, $1.200/kg nacional</li>
+                <li>Activos: Tractor John Deere 3570 (2022), casa viviente, bodegas, herramientas, bombas de fumigación,
+                    canastillas plásticas, etc.</li>
+                <li>Certificaciones: ICA: 58470298; Global GAP GGN: 4063651134377</li>
+                <li>Bosques nativos: 9 ha, resiembra de 7.500 árboles para bonos de carbono y conservación.</li>
+            </ul>
+        </section>
+        <section class="galeria" id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <button class="carrusel-btn prev" aria-label="Anterior">&#10094;</button>
+                <div class="galeria-ventana">
+                    <div class="loading-indicator" id="loading-indicator">
+                        <div class="spinner"></div>
+                    </div>
+                    <div class="galeria-grid" id="galeria-grid">
+                        <!-- Las imágenes se insertarán dinámicamente -->
+                    </div>
+                </div>
+                <button class="carrusel-btn next" aria-label="Siguiente">&#10095;</button>
+            </div>
+        </section>
+        <footer class="footer-contacto" id="contacto">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sociedad Agrícola Tresagua S.A.S.</h3>
+                    <p class="footer-slogan">Comprometidos con el desarrollo agrícola sostenible</p>
+                </div>
+                <div class="footer-section contacto-info">
+                    <h4>Contacto</h4>
+                    <div class="contacto-item">
+                        <span class="contacto-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 12h.01" />
+                                <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                                <rect width="20" height="14" x="2" y="6" rx="2" />
+                            </svg>
+                        </span>
+                        <span>NIT: 901485048-2</span>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="contacto-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                            </svg>
+                        </span>
+                        <a href="mailto:4detresagua@gmail.com">4detresagua@gmail.com</a>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="contacto-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1 2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                            </svg>
+                        </span>
+                        <span>311 317 13 98 / 300 634 23 89</span>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="contacto-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </span>
+                        <span>Urrao - Antioquia, Colombia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sociedad Agrícola Tresagua S.A.S. | Desarrollado para el crecimiento sostenible</p>
+            </div>
+        </footer>
+    </main>
+    <script src="menu.js"></script>
+    <script src="carrusel.js"></script>
+</body>
+
+</html>
